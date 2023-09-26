@@ -1,2 +1,2 @@
-# ProFinder_Html
- Projeto em HTML/CSS puro.
+# ProFinder 2.0
+ HTML, CSS e JAVASCRIPT
