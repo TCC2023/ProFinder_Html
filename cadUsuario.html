@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cadusuario.css">
+
+
+
     <title>Cadastro de Usuário</title>
 </head>
 <body>
     <header>
+        <div class="div-nav">
         <nav class="navibar">
         <a href="index.html">
         <img class="logo" src="./img/logo.png"/>
@@ -26,29 +30,61 @@
                     <li><a href="cadUsuario.html">Cadastrar-se</a></li>
                 </ul>
             </div> 
+            </nav>
+            </div>
         </nav>
     </header>
     
+
+<div class="div-cadusu">
     <div class="container">
+        <div class="titulo-cad">
         <h1>Cadastro de Usuário</h1>
+        </div>
         <form id="cadastro-form" action="#" method="post">
+            <div class="form-nome">
             <label for="nome">Nome:</label>
             <input type="text" id="nome" name="nome" required>
-                    
+            </div>
+
+            <div class=" form-email">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-                   
+            </div>
+
+            <div class="form-senha">
             <label for="senha">Senha:</label>
             <input type="password" id="senha" name="senha" required>
-                    
+            </div>
+
+            <div class="form-usu">
             <label for="tipo_usuario">Tipo de Usuário:</label>
             <select id="tipo_usuario" name="tipo-usuario">
                 <option value="cliente">Cliente</option>
                 <option value="prestador">Prestador de Serviços</option>
             </select>
-                    
+            </div>
+
+            <div class="form-cel">
+                <label for="celular">Celular</label>
+                <input type="number" id="celular" name="celular" maxlength="11"  class="form-control" placeholder="Celular"  required="required" pattern="^[0-9]{11}$">
+
+            </div>
+
+            <div class="form-data">
+                <label for="data_nasc">Data de Nascimento</label>
+                <input type="date" id="data" name="data" lang="pt-BR" required>
+            </div>
+                
+
+            <div class="btn-cadusu">
             <button type="submit">Cadastrar</button>
+            </div>
+
         </form>
     </div>
+</div>
+
+
 </body>
 </html>
